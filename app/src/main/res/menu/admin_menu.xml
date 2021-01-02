@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/addData"
+        android:title="Tambah Data"
+        />
+
+    <item
+        android:id="@+id/updateData"
+        android:title="Update Data"
+        />
+
+    <item
+        android:id="@+id/deleteData"
+        android:title="Delete Data"
+        />
+
+
+</menu>

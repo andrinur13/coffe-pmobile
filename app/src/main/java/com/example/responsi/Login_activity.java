@@ -64,7 +64,7 @@ public class Login_activity extends AppCompatActivity {
 
     protected void getUsername(final String username, String password) {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
-        String url = "http://www.futsaloka.my.id/pmobile/index.php/User/login";
+        String url = "http://www.futsaloka.my.id/pmobile/index.php/pegawai/login";
         JSONObject postData = new JSONObject();
 
 
@@ -92,13 +92,16 @@ public class Login_activity extends AppCompatActivity {
                     } else {
 
                         JSONObject dataUser = jsonObject.getJSONObject("data");
-                        int user_type = dataUser.getInt("user_type");
+                        int user_type = dataUser.getInt("level");
 
                         if(user_type == 1) {
                             Intent goIntent = new Intent(Login_activity.this, HalamanAdmin.class);
                             startActivity(goIntent);
                             finish();
                         } else {
+                            Intent goIntent = new Intent(Login_activity.this, HalamanPegawai.class);
+                            startActivity(goIntent);
+                            finish();
                             Toast.makeText(Login_activity.this, "bukan admin", Toast.LENGTH_SHORT).show();
                         }
                     }

@@ -4,14 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class HalamanAdmin extends AppCompatActivity {
+public class HalamanPegawai extends AppCompatActivity {
 
     ImageView baristaBtn, tokoKopiBtn;
 
@@ -28,7 +26,7 @@ public class HalamanAdmin extends AppCompatActivity {
         baristaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HalamanAdmin.this, ListKaryawanAdmin.class);
+                Intent intent = new Intent(HalamanPegawai.this, ListPegawai.class);
                 startActivity(intent);
             }
         });
@@ -36,8 +34,7 @@ public class HalamanAdmin extends AppCompatActivity {
         tokoKopiBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Toast.makeText(HalamanAdmin.this, "list toko kopi diklik", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(HalamanAdmin.this, MainActivity.class);
+                Intent intent = new Intent(HalamanPegawai.this, MainActivity.class);
                 startActivity(intent);
             }
         });

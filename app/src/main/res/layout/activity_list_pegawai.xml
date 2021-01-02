@@ -9,7 +9,7 @@
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".ListPegawai">
 
         <TableLayout
             android:id="@+id/table_layout"
@@ -21,7 +21,7 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#fc4"
+                android:background="#1abc9c"
                 android:padding="3dp"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center_horizontal"

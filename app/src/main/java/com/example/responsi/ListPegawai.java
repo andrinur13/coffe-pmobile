@@ -1,22 +1,14 @@
 package com.example.responsi;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -29,10 +21,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-
-public class ListKaryawanAdmin extends AppCompatActivity {
-
+public class ListPegawai extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -136,55 +125,26 @@ public class ListKaryawanAdmin extends AppCompatActivity {
 //        pegawaiArrayList.add(new Pegawai("Aham Siswana", "1214378098", "098758124"));
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.admin_menu, menu);
-        return true;
-    }
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.addData:
-                addDataAdmin();
-                return true;
-
-            case R.id.updateData:
-                updateDataAdmin();
-                return true;
-
-            case R.id.deleteData:
-                deleteDataAdmin();
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
 
 
     public void addDataAdmin() {
-        Intent intent = new Intent(ListKaryawanAdmin.this, AddDataAdmin.class);
+        Intent intent = new Intent(ListPegawai.this, AddDataAdmin.class);
         startActivity(intent);
         finish();
     }
 
 
     public void updateDataAdmin() {
-        Intent intent = new Intent(ListKaryawanAdmin.this, UpdateDataAdmin.class);
+        Intent intent = new Intent(ListPegawai.this, UpdateDataAdmin.class);
         startActivity(intent);
         finish();
     }
 
 
     public void deleteDataAdmin() {
-        Intent intent = new Intent(ListKaryawanAdmin.this, DeleteDataAdmin.class);
+        Intent intent = new Intent(ListPegawai.this, DeleteDataAdmin.class);
         startActivity(intent);
         finish();
     }
-
-
 
 }

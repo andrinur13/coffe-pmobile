@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AddDataAdmin">
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Data"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Id"
+            android:inputType="number"
+            android:background="@drawable/shape_login"
+            android:padding="10dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:background="@drawable/shape_login"
+            android:padding="10dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:background="@drawable/shape_login"
+            android:padding="10dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:background="@drawable/shape_login"
+            android:padding="10dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/shape_login"
+            android:padding="10dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            />
+
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat"
+            android:background="@drawable/shape_login"
+            android:padding="10dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/level"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:layout_marginRight="30dp"
+                android:id="@+id/admin"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bukan Admin"
+                android:id="@+id/bukanadmin"
+                />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="Update Data"
+            android:background="#27ae60"
+            android:textColor="#ffffff"
+            android:onClick="updateData"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
